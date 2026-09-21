@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Surya E-Mart</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Surya E-Mart</h1><input id="search" placeholder="Search products" oninput="loadProducts()"><button onclick="showCart()">Cart (<span id="count">0</span>)</button></header>
+<section class="hero"><h2>Online Shopping</h2><p>Shop products easily with Surya E-Mart.</p></section>
+<main id="products" class="grid"></main>
+<div id="cart" class="modal"><div class="box"><button onclick="closeCart()">Close</button><h2>Your Cart</h2><div id="cartItems"></div><h3>Total: ₹<span id="total">0</span></h3><button onclick="checkout()">Place Order</button></div></div>
+<script src="app.js"></script></body></html>
